@@ -1,5 +1,6 @@
 body{
-    background-color: #f6e58d;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 .navbar-brand{
     color: black;
@@ -21,19 +22,38 @@ body{
     background-color: blue;
     color: #fff;
 }
-/* .item{
+/* .display{
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 5px;
     width: 300px;
-    padding: 20px;
     text-align: center;
     margin-top: 20px;
-}
-#displaySection{
+    
+} */
+#display-Section{
    display: grid;
    grid-template-columns: repeat(4, 1fr);
-   grid-gap: 10px;
+   grid-gap: 5px;
+   padding-left: 50px;
+   margin-top: 20px;
+   text-align: center;
 }
-#displaySection img{
-    width: 200px;
-} */
+img{
+    width: 298px;
+ }
+#meal-info{
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 475px;
+ }
+ .meal-info,p{
+    margin: 0;
+ }
+ .navbar-brand{
+     padding-left: 217px;
+ }
+ #navbarNav{
+     padding-right: 85px;
+ }
