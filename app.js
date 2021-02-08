@@ -1,10 +1,16 @@
 const searchMeal = () => {
 const searchName = document.getElementById('search-field').value;
-const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchName}`;
+if(searchName ==""){
+    alert('Field Must Not Be Empty')
+}
+else{
+    const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchName}`;
     fetch(url)
     .then(res => res.json())
     .then(data =>displayMeal(data.meals))
     
+}
+
 
 }
 const displayMeal = meal =>{
@@ -40,9 +46,16 @@ const mealDetails = info =>{
            <img src="${info.strMealThumb}">
            <h5>Ingredient</h5>
            <p>Name:${info.strMeal}</p>
-           <p>Area:${info.strArea}</p>
-           <p>Categories:${info.strCategory}</p>
+           <p>Area:${info.strIngredient1}</p>
+           <p>Categories:${info.strIngredient2}</p>
+           <p>Element:${info.strIngredient3}</p>
            <p>Element:${info.strIngredient4}</p>
+           <p>Element:${info.strIngredient5}</p>
+           <p>Element:${info.strIngredient6}</p>
+           <p>Element:${info.strIngredient7}</p>
+           <p>Element:${info.strIngredient8}</p>
+           <p>Element:${info.strIngredient9}</p>
+           <p>Element:${info.strIngredient10}</p>
 
         </div>
         
