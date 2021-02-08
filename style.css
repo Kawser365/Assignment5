@@ -1,0 +1,39 @@
+body{
+    background-color: #f6e58d;
+}
+.navbar-brand{
+    color: black;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.nav-link{
+    color: black;
+}
+.form-control{
+    width: 40%;
+}
+.d-flex{
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn{
+    background-color: blue;
+    color: #fff;
+}
+/* .item{
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+#displaySection{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 10px;
+}
+#displaySection img{
+    width: 200px;
+} */
