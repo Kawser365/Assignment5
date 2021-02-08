@@ -44,18 +44,19 @@ const mealDetails = info =>{
         display.innerHTML = `
         <div onClick="details('${info}')">
            <img src="${info.strMealThumb}">
+           <h3>${info.strMeal}</h3>
            <h5>Ingredient</h5>
-           <p>Name:${info.strMeal}</p>
-           <p>Area:${info.strIngredient1}</p>
-           <p>Categories:${info.strIngredient2}</p>
-           <p>Element:${info.strIngredient3}</p>
-           <p>Element:${info.strIngredient4}</p>
-           <p>Element:${info.strIngredient5}</p>
-           <p>Element:${info.strIngredient6}</p>
-           <p>Element:${info.strIngredient7}</p>
-           <p>Element:${info.strIngredient8}</p>
-           <p>Element:${info.strIngredient9}</p>
-           <p>Element:${info.strIngredient10}</p>
+           <p>${info.strMeal}</p>
+           <p>${info.strIngredient1}</p>
+           <p>${info.strIngredient2}</p>
+           <p>${info.strIngredient3}</p>
+           <p>${info.strIngredient4}</p>
+           <p>${info.strIngredient5}</p>
+           <p>${info.strIngredient6}</p>
+           <p>${info.strIngredient7}</p>
+           <p>${info.strIngredient8}</p>
+           <p>${info.strIngredient9}</p>
+           <p>${info.strIngredient10}</p>
 
         </div>
         
