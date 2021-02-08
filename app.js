@@ -7,15 +7,10 @@ const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchName}`
     
 
 }
-
-
 const displayMeal = meal =>{
     const display = document.getElementById('display-Section')
     display.innerHTML = "";
     meal.forEach(mealItem => {
-
-        // const mealDiv = document.createElement('h3');
-        // mealDiv.innerText = mealItem.strMeal;
         display.className = 'item';
         display.innerHTML += `
         <div>
@@ -28,9 +23,6 @@ const displayMeal = meal =>{
         </div>
         
         `
-        // display.appendChild(mealDiv); 
-        // <h3 class="item">${mealItem.strMeal}</h3>
-        
     })
 }
 const details = mealInfo => {
@@ -42,11 +34,7 @@ const details = mealInfo => {
 }    
 
 const mealDetails = info =>{
-    // console.log(info)
     const display = document.getElementById('meal-info')
-        // const mealInfoDiv = document.createElement('p');
-        // mealInfoDiv.innerText = info.strMeal;
-        // display.className = 'mealItem';
         display.innerHTML = `
         <div onClick="details('${info}')">
            <img src="${info.strMealThumb}">
@@ -59,5 +47,4 @@ const mealDetails = info =>{
         </div>
         
         `
-        // display.appendChild(mealInfoDiv);
 }
